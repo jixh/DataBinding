@@ -2,8 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <import type="com.jc.databinding.bean.ObservableUserBean" />
-        <import type="com.jc.databinding.bean.WrapUserBean" />
+        <import type="com.jc.databinding.module.bindingview.bean.ObservableUserBean" />
+        <import type="com.jc.databinding.module.bindingview.bean.WrapUserBean" />
         <import type="com.jc.databinding.util.StringUtils" />
         <variable
             name="observableUserBean"

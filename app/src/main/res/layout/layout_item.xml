@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.jc.databinding.module.listview.bean.ItemBean" />
+        <import type="com.jc.databinding.R" />
+        <import type="com.jc.databinding.util.BindUtils" />
+        <variable name="item" type="ItemBean" />
+    </data>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:onClick="@{BindUtils.onClick}"
+    android:background="@{`#de325e`}"
+    >
+
+    <ImageView
+        android:id="@+id/iv_avter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:url="@{item.url}"
+        app:error="@{R.mipmap.ic_launcher}"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:text="@{item.name}"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+</layout>

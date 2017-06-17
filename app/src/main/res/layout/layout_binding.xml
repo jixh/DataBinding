@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.jc.databinding.module.twowaybinding.bean.TwoWayBean"/>
+        <import type="com.jc.databinding.R" />
+        <import type="android.view.View" />
+        <variable
+            name="item"
+            type="TwoWayBean"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@{item.itemName}"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/etinput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@={item.itemName}"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="@{checkbox.checked?View.VISIBLE:View.GONE}"
+        app:imageResource="@{R.mipmap.ic_launcher}"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="@{item.isItemChecked}"
+        />
+</LinearLayout>
+</layout>

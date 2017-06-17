@@ -1,4 +1,4 @@
-package com.jc.databinding.bean;
+package com.jc.databinding.module.bindingview.bean;
 
 import android.databinding.ObservableField;
 import android.databinding.ObservableInt;

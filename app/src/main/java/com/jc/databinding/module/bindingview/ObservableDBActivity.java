@@ -1,4 +1,4 @@
-package com.jc.databinding.ui.bindingview;
+package com.jc.databinding.module.bindingview;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,11 +6,10 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.view.View;
-
 import com.jc.databinding.R;
-import com.jc.databinding.bean.ObservableUserBean;
-import com.jc.databinding.bean.WrapUserBean;
 import com.jc.databinding.databinding.ObservableDbLayoutBinding;
+import com.jc.databinding.module.bindingview.bean.ObservableUserBean;
+import com.jc.databinding.module.bindingview.bean.WrapUserBean;
 
 /**
  * Created by jc on 2016-5-12.
